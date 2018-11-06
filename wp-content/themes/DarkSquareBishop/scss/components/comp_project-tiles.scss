@@ -1,0 +1,117 @@
+.project__wrapper {
+  padding: 50px;
+}
+
+.project__blocks {
+  width: 100%;
+
+  > li {
+    overflow: hidden;
+    border-radius: $border-radius;
+    width: 100%;
+    min-height: 500px;
+    background: $neutral-light;
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+    box-shadow: $box-shadow;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    .project__image {
+      width: 50%;
+      float: left;
+      height: 500px;
+      overflow: hidden;
+      img {
+        -moz-transition: 0.6s ease;
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+      }
+    }  
+    &:hover {
+      .project__image img {
+        -moz-transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+      }
+    }   
+  }
+}
+
+.project__details {
+  padding: 80px;
+  height: 500px;
+  float: right;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.project__details__inner {
+  flex: 1;
+  height: auto;
+  h6 {
+    color: $neutral-mid !important;
+  }
+}
+
+/* ----------------------------------------------------- */
+@media all and (max-width: $breakpoint-med){
+/* ----------------------------------------------------- */
+
+.project__wrapper {
+  padding: 30px;
+}
+
+.project__blocks {
+  > li {
+    min-height: 0;
+    margin-bottom: 30px;
+    .project__image {
+      width: 100%;
+      float: left;
+      height: 400px;
+    }
+  }
+}
+
+.project__details {
+  padding: 50px;
+  height: auto;
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* ----------------------------------------------------- */  
+}
+/* ----------------------------------------------------- */
+
+
+/* ----------------------------------------------------- */
+@media all and (max-width: $breakpoint-small){
+/* ----------------------------------------------------- */
+
+.project__wrapper {
+  padding: 15px;
+}
+
+.project__blocks {
+  > li {
+    margin-bottom: 15px;
+    .project__image {
+      width: 100%;
+      float: left;
+      height: 250px;
+    }
+  }
+}
+
+.project__details {
+  padding: 24px;
+}
+
+/* ----------------------------------------------------- */  
+}
+/* ----------------------------------------------------- */

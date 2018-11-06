@@ -1,0 +1,118 @@
+/* ----------------- MOBILE NAVIGATION ----------------- */
+
+.nav__overlay {
+  display: none;
+}
+
+.nav__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  z-index: 99999;
+  background: $neutral-dark;
+  text-align: center;
+  padding: 40px;
+  display: none;
+    
+    #logo{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      margin: 0 auto;
+      background: url('img/logo-symbol.svg') center center no-repeat;
+      background-size: 100%;
+      opacity: 0.5;
+    }
+
+    ul {
+      list-style: none;
+      width: 300px;
+      font-family: $body-font;
+      font-weight: 400;
+      position: absolute;
+      top: 44%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      li{
+        a {
+          color: $neutral-light;
+          text-decoration: none;
+          font-size: 2.1em;
+          line-height: 1;
+          padding: 18px 0;
+          display: block;
+        }
+        ul{
+          margin-bottom: 0px;
+          display: none;
+          li{
+            border-bottom: 0px;
+            a{
+              color: $neutral-light;
+              font-size: 1.1em;
+              padding: 0 0 18px 0;
+            }
+          }
+        }
+      }
+    }
+    
+  #close {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    margin-left: -25px;
+    left: 50%;
+    &:before, &:after{
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 3px;
+      background: $neutral-light;
+      display: block;
+      bottom: 23px;
+      left: 50%;
+      margin-left: -15px;
+    }
+    &:before { @include rotate(45deg); }
+    &:after { @include rotate(-45deg); }
+  }
+}
+
+/* ----------------------------------------------------- */
+@media all and (max-width: $breakpoint-small){
+/* ----------------------------------------------------- */
+
+.nav__overlay {
+  padding: 30px;
+  ul {
+    width: 100%;
+    margin: 0;
+    li{
+      a {
+        font-size: 1.5em;
+        line-height: 1;
+        padding: 10px 0;
+      }
+      ul{
+        margin-bottom: 0px;
+        display: none;
+        li{
+          border-bottom: 0px;
+          a{
+            font-size: 1.2em;
+            padding: 0 0 15px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---- */  
+}
+/* ---- */

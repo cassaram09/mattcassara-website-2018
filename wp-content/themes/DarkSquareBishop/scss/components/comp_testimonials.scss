@@ -1,0 +1,95 @@
+.testimonials {
+  padding: 80px 0px;
+  text-align: center !important;
+}
+
+.cycle-testimonials {
+  width: 100%;
+  li {
+    height: 240px;
+    width: 100%;
+    padding: 0px 60px;
+  }
+}
+
+// Cycle Pager
+
+.testimonial-pager { 
+  height: 18px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-pager span { 
+    opacity: 0.4;
+    width: 24px;
+    height:12px; 
+    border-radius: 20px;
+    display: inline-block;
+    color: $neutral-mid;
+    background: $neutral-mid;
+    margin: 0px 5px;
+    cursor: pointer; 
+    @include animate(.2s);
+    &:hover {
+      opacity: 0.9;
+    }
+}
+
+.testimonial-pager span.cycle-pager-active {
+  color: $primary;
+  background: $primary;
+  opacity: 1.0;
+}
+
+.testimonial-pager > * { 
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------- */
+@media all and (max-width: $breakpoint-med){
+/* ----------------------------------------------------- */
+
+.testimonials {
+  padding: 50px 0px;
+}
+
+.cycle-testimonials {
+  width: 100%;
+  li {
+    height: 230px;
+    width: 100%;
+    padding: 0px 30px;
+  }
+}
+
+
+/* ----------------------------------------------------- */  
+}
+/* ----------------------------------------------------- */
+
+
+/* ----------------------------------------------------- */
+@media all and (max-width: $breakpoint-small){
+/* ----------------------------------------------------- */
+
+.testimonials {
+  padding: 30px 0px;
+}
+
+.cycle-testimonials {
+  width: 100%;
+  li {
+    height: 240px;
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+
+/* ----------------------------------------------------- */  
+}
+/* ----------------------------------------------------- */
+
+

@@ -1,0 +1,99 @@
+/* ---------- CONTACT FORM 7 ----------*/
+
+form.wpcf7-form {
+  margin: 0;
+  padding: 0;
+
+  img.ajax-loader {
+    border: none !important;
+    vertical-align: middle !important;
+    margin-left: 4px !important;
+  }
+
+  .watermark {
+    color: #888 !important;
+  }
+  .wpcf7-response-output {
+    margin: 0px !important;
+  }
+
+  .wpcf7-mail-sent-ok {
+    background-color: $success !important;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    color: $neutral-light;
+  }
+
+  .wpcf7-mail-sent-ng {
+    border: 2px solid $error !important;
+  }
+
+  .wpcf7-spam-blocked {
+    border: 2px solid #ffa500 !important;
+  }
+
+  .wpcf7-validation-errors {
+    border: 2px solid $error !important;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    color: $error;
+    font-family: $body-font;
+  }
+
+  .wpcf7-form-control-wrap {
+    position: static !important;
+  }
+
+  span.wpcf7-form-control-wrap {
+    //position: relative;
+  }
+
+  span .wpcf7-not-valid {
+    //border: 1px solid $error !important;
+  }
+
+  span.wpcf7-not-valid-tip {
+    @include animate(.2s);
+    position: absolute !important;
+    font-family: $body-font;
+    right: 12px !important;
+    top: 12px !important;
+    line-height: 12px;
+    border-radius: 3px;
+    background-color: $error !important;
+    clear: both !important;
+    z-index: 100 !important;
+    color: $neutral-light !important;
+    font-size: .65em !important;
+    width: 110px !important;
+    padding: 6px 4px !important;
+    //height: 42px;
+    text-align: center !important;
+  }
+
+  span.wpcf7-not-valid-tip-no-ajax {
+    color: $error !important;
+    font-size: 10pt !important;
+    display: block !important;
+  }
+
+  span.wpcf7-list-item {
+    margin-left: 0.5em !important;
+  }
+
+  .wpcf7-display-none {
+    display: none;
+  }
+
+}
+
+.screen-reader-response {
+  display: none;
+}
+
+
+@media all and (max-width: 1060px) {}
+
+@media all and (max-width: 600px) {}

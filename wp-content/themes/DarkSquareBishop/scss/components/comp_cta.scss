@@ -1,0 +1,45 @@
+.call-to-action {
+  background: $primary;
+
+  a {
+  	padding: 30px 0px;
+  	display: block;
+  	width: 100%;
+  	
+  	h3 {
+	  	color: $neutral-light;
+	  	text-align: center;
+	  	@include animate(.2s);
+	  }
+
+  	&:hover {
+  		h3 {
+  			color: $secondary;
+	  		span {
+	  			padding-left: 20px;
+	  		}
+  		}
+  	}
+	}
+
+}
+
+@media all and (max-width: $breakpoint-small) {
+
+.call-to-action {
+
+  a {
+  	padding: 15px 0px;
+  	h3 {
+	  	span {
+	  		padding-left: 10px;
+	  		font-size: 1.1em;
+	  	}
+	  }
+	}
+
+}
+
+}
+
+

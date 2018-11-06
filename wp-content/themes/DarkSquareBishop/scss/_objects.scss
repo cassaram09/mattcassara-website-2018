@@ -1,0 +1,134 @@
+/* ----- OBJECTS ----- */
+
+// Generic use items such as columns, block, wrappers, containers, etc.
+
+@import './vendor/animate.scss';
+@import './vendor/simple-grid.scss';
+@import './vendor/mobile-nav.scss';
+@import './vendor/line-awesome.scss';
+
+
+.button__block {
+  display: block;
+  //border: 1px dotted red;
+  padding: 30px 0px 15px 0px;
+  &.-centered {
+    text-align: center;
+  }
+}
+
+.button,
+input[type="submit"] {
+
+  // IMPORTANT DEFAULTS ---------------------
+  border-radius: $border-radius !important;
+  border: 2px solid $neutral-dark !important;
+  text-decoration: none !important;
+  font-family: $body-font !important;
+  color: $neutral-light !important;
+  background-color: $neutral-dark !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  display: inline-block;
+  @include animate(0.2s);
+
+  &:hover{
+    color: $primary !important;
+    background: $neutral-grey !important;
+    border: 2px solid $primary !important;
+  }
+
+  // CUSTOMIZE BUTTON TYPES -----------------
+  &.-large {
+    font-size: 1.25em;
+    padding: 18px 45px;
+  }
+
+  &.-small {
+    font-size: 1em;
+    padding: 15px 25px;
+  }
+
+  &.-left-inline {
+    margin-right: 20px;
+  }
+
+  &.-center-inline {
+    margin: 0px 15px;
+  }
+
+}
+
+.line-break {
+  width: 100px;
+  height: 4px;
+  background-color: $primary;
+  margin: 25px auto 50px auto;
+  display: block;
+}
+
+/* ----------------------------------------------------- */
+@media all and (max-width: $breakpoint-med){
+/* ----------------------------------------------------- */
+
+.button__block {
+  padding: 20px 0px 10px 0px;
+}
+
+.button {
+  margin-top: 20px;
+
+  &.-large {
+    font-size: 1.1em;
+    padding: 16px 40px;
+  }
+
+  &.-small {
+    font-size: .95em;
+    padding: 12px 20px;
+  }
+
+}
+
+.line-break {
+  margin: 15px auto 20px auto;
+}
+
+/* ----------------------------------------------------- */  
+}
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+@media all and (max-width: $breakpoint-small){
+/* ----------------------------------------------------- */
+
+.button__block {
+  padding: 10px 0px 5px 0px;
+}
+
+.button {
+  margin-top: 15px;
+
+  &.-large {
+    font-size: 1em;
+    padding: 12px 26px;
+  }
+
+  &.-small {
+    font-size: .9em;
+    padding: 9px 16px;
+  }
+
+  &.-left-inline {
+    margin-right: 0px;
+  }
+
+}
+
+.line-break {
+  margin: 5px auto 10px auto;
+}
+
+/* ----------------------------------------------------- */  
+}
+/* ----------------------------------------------------- */

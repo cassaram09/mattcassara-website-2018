@@ -1,0 +1,38 @@
+/* ----- COPMONENTS ----- */
+
+// Most of website styles belong here. Individual components.
+// Do not modify content in inject block - this is autoloaded by Gulp.
+
+/* inject:scss */
+
+@import "./wp-content/themes/master/scss/components/comp_blog.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_cf7.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_clients.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_content.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_cta.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_forms.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_hero.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_location.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_project-content.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_project-tiles.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_services.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_team.scss";
+
+@import "./wp-content/themes/master/scss/components/comp_testimonials.scss";
+
+@import "./wp-content/themes/master/scss/components/footer.scss";
+
+@import "./wp-content/themes/master/scss/components/header.scss";
+
+/* endinject */

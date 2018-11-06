@@ -1,0 +1,273 @@
+/* ----- ELEMENTS ----- */
+
+// Add sensible, non styled defaults for tags. 
+
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+section {
+  padding: 0px;
+  margin: 0px;
+  clear: both;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ol {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  padding: 0px;
+  margin: 0px;
+}
+
+section {
+
+  &.-bg-primary {
+    background-color: $primary;
+    h1, h3, h5 { color: $neutral-grey; }
+    h2, h4, h6 { color: $neutral-light; }
+    p { color: $neutral-grey; }
+  }
+  
+  &.-bg-secondary {
+    background-color: $secondary;
+    h1, h3, h5 { color: $neutral-dark; }
+    h2, h4, h6 { color: $primary; }
+    p { color: $neutral-dark; }
+  }
+
+  &.-bg-light {
+    background-color: $neutral-light;
+    h1, h3 { color: $neutral-dark; }
+    h2, h4, h6 { color: $primary; }
+    h5 { color: $neutral-mid; }
+    p { color: $neutral-dark; }
+  }
+
+  &.-bg-grey {
+    background-color: $neutral-grey;
+    h1, h3, h5 { color: $neutral-dark; }
+    h2, h4, h6 { color: $primary; }
+    p { color: $neutral-dark; }
+  }
+
+  &.-bg-dark {
+    background-color: $neutral-dark;
+    h1, h3, h5, h4 { color: $neutral-light; }
+    h2, h6 { color: $primary; }
+    p { color: $neutral-light; }
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+h2, h4, h6 {
+  &.-light {
+    color: $neutral-light;
+  }
+  &.-dark {
+    color: $neutral-dark;
+  }
+}
+
+h1 {
+  padding: 20px 0px;
+  margin: 0px;
+  font-family: $title-font;
+  font-size: 3.4em;
+  line-height: 1.4em;
+}
+
+h2 {
+  padding: 15px 0px;
+  margin: 0px;
+  font-family: $title-font;
+  font-size: 2.6em;
+  line-height: 1.3em;
+}
+
+h3 {
+  padding: 10px 0px;
+  margin: 0px;
+  font-family: $title-font;
+  font-size: 2.2em;
+  line-height: 1.35em;
+}
+
+h4 {
+  padding: 10px 0px;
+  margin: 0px;
+  font-family: $title-font;
+  font-size: 1.8em;
+  line-height: 1.3em;
+}
+
+h5 {
+  padding: 10px 0px;
+  margin: 0px;
+  font-family: $title-font;
+  font-size: 1.4em;
+}
+
+h6 {  
+  font-family: $body-font;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+p {
+  padding: 10px 0px;
+  margin: 0px;
+  font-family: $body-font;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  font-weight: 400;
+  a {
+    color: $primary;
+    &:hover{
+      outline-width: 0;
+      opacity: 0.7;
+    }
+  }
+}
+
+a {
+  font-family: $body-font;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: inherit;
+  @include animate(0.2s);
+  &:hover{
+    outline-width: 0;
+  }
+}
+
+span {
+  padding: 0px;
+  margin: 0px;
+  font-family: $body-font;
+}
+
+/* ----------------------------------------------------- */
+@media all and (max-width: $breakpoint-med){
+/* ----------------------------------------------------- */
+
+h1 {
+  padding: 15px 0px;
+  font-size: 2.3em;
+  line-height: 1.4em;
+}
+
+h2 {
+  padding: 15px 0px;
+  font-size: 2.1em;
+  line-height: 1.3em;
+}
+
+h3 {
+  padding: 10px 0px;
+  font-size: 1.9em;
+  line-height: 1.3em;
+}
+
+h4 {
+  padding: 10px 0px;
+  font-size: 1.7em;
+  line-height: 1.3em;
+}
+
+h5 {
+  padding: 10px 0px;
+  font-size: 1.5em;
+}
+
+h6 {  
+  padding: 5px 0px;
+  font-size: .9em;
+  line-height: 1.3em;
+  opacity: .75;
+}
+
+p {
+  padding: 10px 0px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+/* ---------- */  
+}
+/* ---------- */
+
+/* ----------------------------------------------------- */
+@media all and (max-width: $breakpoint-small){
+/* ----------------------------------------------------- */
+
+h1 {
+  padding: 15px 0px;
+  font-size: 1.8em;
+  line-height: 1.2em;
+}
+
+h2 {
+  padding: 15px 0px;
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+
+h3 {
+  padding: 10px 0px;
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+
+h4 {
+  padding: 10px 0px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+h5 {
+  padding: 10px 0px;
+  font-size: 1em;
+}
+
+h6 {  
+  padding: 0;
+  margin: 0;
+  font-size: .8em;
+}
+
+p {
+  padding: 10px 0px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* ---------- */  
+}
+/* ---------- */
