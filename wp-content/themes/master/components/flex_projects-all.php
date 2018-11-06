@@ -11,7 +11,7 @@
     <li>
 
       <div class='project__image'>
-        <?php $image = get_field('featured_image'); $image_url = $image['sizes' ]['medium' ]; ?>
+        <?php $image = get_field('featured_image'); $image_url = $image['sizes' ]['large' ]; ?>
         <img src='<?php echo $image_url; ?>' data-focus-left=".5" data-focus-top=".5" data-focus-right=".5" data-focus-bottom=".5" class="responsify">
       </div>
 
