@@ -10,13 +10,12 @@
 
         <div class='row'>
           <div class='col-12'>
-            <h6>EST 2016</h6>
-            <h1>We’re a nimble team that makes thoughtful design & development decisions.</h1>
-            <p class='hero__tagline'>We specialize in creating digital products for modern users and businesses.</p>
+            <h1><?php the_sub_field('hero_title') ?></h1>
+            <p class='hero__tagline'><?php the_sub_field('hero_subtitle') ?></p>
 
             <div class="button__block">
-              <a href='<?php bloginfo('url'); ?>/services/' class='button -large -left-inline'>Our services &rarr;</a>
-              <a href='<?php bloginfo('url'); ?>/projects/' class='button -large -left-inline'>Our projects &rarr;</a>
+              <a href='<?php bloginfo('url'); ?>/about/' class='button -large -left-inline'>About &rarr;</a>
+              <a href='<?php bloginfo('url'); ?>/projcets/' class='button -large -left-inline'>Projects &rarr;</a>
             </div>
           </div>
         
@@ -25,9 +24,10 @@
 
     </div>
 
+    <?php $image = get_sub_field('hero_image'); ?>
+
     <ul class='hero__slideshow -home cycle-slideshow' data-cycle-fx='fade' data-cycle-speed='8000' data-cycle-timeout='50' data-cycle-slides='> li'>
-      <li style='background-image:url(<?php bloginfo('template_directory'); ?>/img/chess_slide2.jpg);'></li>
-      <li style='background-image:url(<?php bloginfo('template_directory'); ?>/img/chess_slide1.jpg);'></li>
+      <li style="background-image:url(<?php echo $image['url']; ?>);"></li>
     </ul>
 
   </section>
