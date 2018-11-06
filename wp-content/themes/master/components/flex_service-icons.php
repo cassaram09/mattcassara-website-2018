@@ -4,7 +4,7 @@
 
     <div class='row'>
       <div class="col-12">
-        <h3>Core solutions we offer</h3>
+        <h3>Core competencies</h3>
       </div>
     </div>
 

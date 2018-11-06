@@ -4,7 +4,7 @@
   <div class='container'>
     <div class='row'>
 
-        <h4>More of our thoughts</h4>
+        <h4>Want more?</h4>
 
         <ul class="related__posts">
 

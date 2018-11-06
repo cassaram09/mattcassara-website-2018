@@ -15,7 +15,7 @@
 
             <div class="button__block">
               <a href='<?php bloginfo('url'); ?>/about/' class='button -large -left-inline'>About &rarr;</a>
-              <a href='<?php bloginfo('url'); ?>/projcets/' class='button -large -left-inline'>Projects &rarr;</a>
+              <a href='<?php bloginfo('url'); ?>/projects/' class='button -large -left-inline'>Projects &rarr;</a>
             </div>
           </div>
         

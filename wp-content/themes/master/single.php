@@ -49,10 +49,6 @@
               
             <div class="text -single">
               <?php the_content(); ?>
-
-              <p class="blog__pull-quote">Labore repellendus et necessitatibus qui suscipit earum non tempora. Facilis commodi possimus ad ut debitis commodi fugiat veniam. </p>
-
-              <?php the_content(); ?>
             </div>
             
             <?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
