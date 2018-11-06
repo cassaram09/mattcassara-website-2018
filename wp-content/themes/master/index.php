@@ -17,8 +17,9 @@
     </div>
   </div>
 
-  <ul class="hero__slideshow -content cycle-slideshow" data-cycle-fx="fade" data-cycle-speed="8000" data-cycle-timeout="50" data-cycle-slides="> li">
-    <li style="background-image:url(<?php bloginfo('template_directory'); ?>/img/hero_dsb_blog.jpg);"></li>
+  <ul class="hero__slideshow -content cycle-slideshow" data-cycle-fx='fade' data-cycle-speed='8000' data-cycle-timeout='50' data-cycle-slides='> li'>
+    <?php $image = get_field('hero_image', get_option('page_for_posts')); $image_url = $image[ 'sizes' ][ 'large' ]; ?>
+    <li style="background-image:url('<?php echo $image_url; ?>');"></li>
   </ul>
 
 </section>
