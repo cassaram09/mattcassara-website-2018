@@ -4,6 +4,8 @@
 
 .project__blocks {
   width: 100%;
+  max-width: 80em;
+  margin: 0px auto;
 
   > li {
     overflow: hidden;

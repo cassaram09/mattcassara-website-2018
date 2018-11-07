@@ -6960,7 +6960,9 @@ form ul li {
   padding: 50px; }
 
 .project__blocks {
-  width: 100%; }
+  width: 100%;
+  max-width: 80em;
+  margin: 0px auto; }
   .project__blocks > li {
     overflow: hidden;
     border-radius: 2px;
