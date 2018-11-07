@@ -36,7 +36,7 @@
           <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
             
             <a href="<?php the_permalink() ?>">
-              <h3><?php the_title(); ?></h3>
+              <h3 class="blog-content__title"><?php the_title(); ?></h3>
             </a>
             
             <?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
@@ -49,7 +49,7 @@
 
             <div class="entry text">
               <?php the_excerpt(); ?>
-              <p><a href='<?php the_permalink(); ?>'>Read more &rarr;</a></p>
+              <p ><a class="button -small" href='<?php the_permalink(); ?>'>Read more</a></p>
             </div>
 
             <!-- <div class="postmetadata">

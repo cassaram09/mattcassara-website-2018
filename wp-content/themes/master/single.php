@@ -2,26 +2,27 @@
 <?php get_header(); ?>
 
 <!-- COMPONENT // Hero -->
-<section class='hero -content'>
-  <div class='hero__content -content'>
-    <div class='container'>
-
-      <div class='row'>
-        <div class='col-12'>
-
-          <h2><?php the_title()?></h2>
-          <?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
-
-        </div>
-      </div>
-
-    </div>
+<section class='hero -blog'>
+  <div class='hero__content -blog'>
+    
   </div>
 </section>
 
 <section class='blog-content -bg-light'>
 
   <div class='container'>
+
+
+    <div class='row blog-content__header'>
+      <div class='col-12'>
+
+         <h2><?php the_title()?></h2>
+          <?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+        
+
+      </div>
+    </div>
+ 
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -31,7 +32,7 @@
       <div class='col-1'></div>
       <div class='col-10'>
                     
-        <a class="blog__featured-image" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <a class="blog__featured-image__single" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
           <?php the_post_thumbnail(); ?>
         </a>
             

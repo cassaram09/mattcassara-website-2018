@@ -56,6 +56,10 @@ $vh-content: 50vh;
       opacity: 0.8;
     }
   }
+
+  &.-blog {
+    height: 100px;
+  }
 }
 
 .hero__content {

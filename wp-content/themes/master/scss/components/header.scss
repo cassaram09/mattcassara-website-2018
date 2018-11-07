@@ -72,6 +72,7 @@ nav.header__nav {
         color: $neutral-light;
         font-weight: 400;
         font-family: $body-font;
+        border-top: 4px solid transparent;
         @include animate(.2s);
         &:hover {
           border-top: 4px solid white;

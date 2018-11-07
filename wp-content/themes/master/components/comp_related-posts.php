@@ -19,7 +19,7 @@
             $args=array(
             'tag__in' => $tag_ids,
             'post__not_in' => array($post->ID),
-            'posts_per_page'=>4, // Number of related posts to display.
+            'posts_per_page'=>3, // Number of related posts to display.
             'caller_get_posts'=>1
             );
              
@@ -36,7 +36,7 @@
                   </div>
                   <div class="related__content">
                     <h5><?php the_title(); ?></h5>
-                    <p class="blog__readmore"><a href='<?php the_permalink(); ?>'>Read &rarr;</a></p>
+                    <p class="blog__readmore button">Read More</p>
                   </div>
                 </a>
               </li>
