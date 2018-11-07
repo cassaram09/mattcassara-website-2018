@@ -9,7 +9,7 @@ $vh-content: 50vh;
 
   &.-home {
     height: $vh-home;
-    background-color: $primary; 
+    background-color: $neutral-dark; 
   }
 
   &.-content{
@@ -230,6 +230,89 @@ $vh-content: 50vh;
   line-height: 1.2em;
 }
 
+
 /* ----------------------------------------------------- */  
 }
 /* ----------------------------------------------------- */
+
+.reveal-text,
+.reveal-text::after {
+  animation-iteration-count: var(--iterations);
+  animation-duration: var(--duration);
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.reveal-text.reveal-text__title, .reveal-text.reveal-text__title::after {
+  animation-delay: 1.2s;
+}
+
+.reveal-text.reveal-text__subtitle, .reveal-text.reveal-text__subtitle::after {
+  animation-delay: 2s;
+}
+
+.reveal-text {
+  display: inline-block;
+  user-select: none;
+  animation-name: reveal-text;
+  color: #FFF;
+  white-space: pre-wrap;
+  cursor: default;
+  z-index: 1000;
+  background: rgba(0,0,0,0.8);
+
+  &.reveal-text__title {
+    padding: 20px;
+  }
+
+  &.reveal-text__subtitle {
+    margin-top: 10px;
+    padding: 20px;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: revealer-text;
+  }
+  
+}
+
+
+@keyframes reveal-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+
+@keyframes revealer-text {
+  
+  0%, 50% {
+    transform-origin: 0 50%;
+  }
+  
+  50%, 100% {
+    transform-origin: 100% 50%;   
+  }
+
+  
+  50% {
+    transform: scaleX(1);
+  }
+  
+  100% {
+    transform: scaleX(0);
+  }
+}

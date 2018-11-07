@@ -3,6 +3,16 @@
 // Reset and normalize styles here. 
 
 @import './vendor/normalize.scss';
+@use postcss-cssnext;
+
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+:root {
+  --animation-delay: 2s;
+  --duration: 800ms;
+  --iterations: 1;
+}
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+
 
 * {
   margin: 0;

@@ -9,12 +9,15 @@ header {
   z-index: 9999;
   padding: 0px 30px;
   transition: background 250ms ease-in-out;
+  background: rgba(0,0,0,0.3);
 
   .header__inner {
     width: 100%;
     height: $header-desktop__large;
     position: relative;
     @include animate(.2s);
+    max-width: 80rem;
+    margin: 0px auto;
   }
 
   .header__logo__link {
@@ -28,6 +31,13 @@ header {
     .header__logo__image{
       @include animate(.2s);
       width: 300px;
+    }
+    .header__logo__text{
+      @include animate(.2s);
+      color: $neutral-light;
+      line-height: 0.6em;
+      font-size: 2em;
+      padding: 0px;
     }
   }
 
@@ -57,7 +67,7 @@ nav.header__nav {
       a {
         opacity: 1;
         display: block;
-        padding: 48px 2px 20px 0px;
+        padding: 35px 2px 20px 0px;
         font-size: 1.3em;
         color: $neutral-light;
         font-weight: 400;
@@ -95,6 +105,11 @@ header.smaller {
     .header__logo__image{
       width: 250px !important;
     }
+    .header__logo__text{
+      @include animate(.2s);
+      color: $neutral-light;
+      padding: 10px 0px;
+    }
   }
 
   nav.header__nav {
@@ -105,6 +120,7 @@ header.smaller {
           display: block;
           padding: 23px 2px 20px 0px;
           font-size: 1.2em;
+          color: $neutral-light;
         }
       }
     }

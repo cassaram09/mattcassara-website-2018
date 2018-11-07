@@ -21,8 +21,8 @@
       </div>
       <div class='team__profile-details'>
         <div class='team__profile-details__inner'>
-          <h4><?php the_title() ?></h4>
-          <h6><?php the_field('role') ?></h6>
+         <!--  <h4><?php the_title() ?></h4>
+          <h6><?php the_field('role') ?></h6> -->
           <div><?php the_field('bio')?> </div>
           <ul class="team__social">
             <?php if( have_rows('team_social') ): ?>

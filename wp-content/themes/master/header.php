@@ -38,7 +38,7 @@
     <div class='header__inner'>
 
         <a class="header__logo__link" href="<?php bloginfo('url'); ?>">
-          <img class='header__logo__image' src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="Dark Square Bishop"/>
+          <p class="header__logo__text">Matt Cassara</p>
         </a>
 
         <nav class='header__nav'>

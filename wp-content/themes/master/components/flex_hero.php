@@ -10,12 +10,12 @@
 
         <div class='row'>
           <div class='col-12'>
-            <h1><?php the_sub_field('hero_title') ?></h1>
-            <p class='hero__tagline'><?php the_sub_field('hero_subtitle') ?></p>
+            <h1 class='reveal-text reveal-text__title'><?php the_sub_field('hero_title') ?></h1>
+            <p class='hero__tagline reveal-text reveal-text__subtitle'><?php the_sub_field('hero_subtitle') ?></p>
 
             <div class="button__block">
-              <a href='<?php bloginfo('url'); ?>/about/' class='button -large -left-inline'>About &rarr;</a>
-              <a href='<?php bloginfo('url'); ?>/projects/' class='button -large -left-inline'>Projects &rarr;</a>
+              <a href='<?php bloginfo('url'); ?>/about/' class='button -large -left-inline'>About</a>
+              <a href='<?php bloginfo('url'); ?>/projects/' class='button -large -left-inline'>Projects</a>
             </div>
           </div>
         
