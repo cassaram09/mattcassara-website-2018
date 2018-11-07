@@ -7,7 +7,7 @@
             <div class="project-nav left"><?php next_post_link('%link', '&larr; Previous project'); ?></div>
           </div>
           <div class="col-4">
-            <a href="<?php bloginfo('url'); ?>/projects/" class="project-nav__all">View all of our projects</a>
+            <a href="<?php bloginfo('url'); ?>/projects/" class="project-nav__all">View all</a>
           </div>
           <div class="col-4">
             <div class="project-nav right"><?php previous_post_link('%link', 'Next project &rarr;'); ?></div>
