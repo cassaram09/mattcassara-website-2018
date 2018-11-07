@@ -22,7 +22,9 @@
       <div class="col-8">
         <h4><?php the_sub_field('service_title') ?></h4>
         <p class='-dark'><?php the_sub_field('service_details') ?></p>
-        <p><a href='<?php the_sub_field('service_link_url') ?>'><?php the_sub_field('service_link_text') ?> &rarr;</a></p>
+        <?php if ( get_sub_field('service_link_url') ): ?>
+          <p><a href='<?php the_sub_field('service_link_url') ?>'><?php the_sub_field('service_link_text') ?></a></p>
+        <?php endif; ?>
       </div>
 
     </div>
