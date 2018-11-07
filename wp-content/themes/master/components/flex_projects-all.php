@@ -5,7 +5,7 @@
 <section class='section project__wrapper -bg-grey'>
   <ul class="project__blocks">
 
-    <?php query_posts( 'post_type=project&showposts=-1'); ?>
+    <?php query_posts( 'post_type=projects&showposts=-1'); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
     <li>
