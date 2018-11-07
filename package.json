@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.31",
     "@babel/preset-env": "^7.0.0-beta.31",
+    "autoprefixer": "^9.3.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^8.0.0-beta.0",
     "babel-preset-env": "^1.6.1",
@@ -26,12 +27,15 @@
     "gulp-inject": "^4.3.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-run": "^1.7.1",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
     "node-notifier": "^5.1.2",
+    "postcss": "^7.0.5",
+    "postcss-cssnext": "^3.1.0",
     "webpack": "^3.8.1"
   },
   "dependencies": {}

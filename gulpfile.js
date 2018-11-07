@@ -9,7 +9,8 @@ var browserSync = require('browser-sync').create();
 var inject = require('gulp-inject');
 var run = require('gulp-run');
 const notifier = require('node-notifier');
-
+var autoprefixer = require('autoprefixer');
+var postcss = require('gulp-postcss');
 
 var paths = {
   styleSheet: './wp-content/themes/master/scss/style.scss',
@@ -36,6 +37,7 @@ gulp.task('scss', function(done) {
   var hasError = false;
   gulp.src(paths.styleSheet)
     .pipe(scss())
+    .pipe(postcss( [ autoprefixer() ]))
     .on('error', function(error){
       hasError = true;
       notifier.notify({
