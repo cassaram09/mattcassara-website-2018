@@ -64,7 +64,7 @@ article {
   margin: 20px 0px;
   max-height: 450px;
   display: block;
-  
+
 	img {
 		width: 100% !important;
     height: 100% !important;
@@ -190,7 +190,8 @@ aside {
 
 			img {
 				width: 100% !important;
-				object-fit: cover;
+    		object-fit: cover;
+    		height: 100% !important;
 			}
 		}
 		.related__content {

@@ -6097,7 +6097,8 @@ aside a {
       .related__posts li .related__image img {
         width: 100% !important;
         -o-object-fit: cover;
-           object-fit: cover; }
+           object-fit: cover;
+        height: 100% !important; }
     .related__posts li .related__content {
       padding: 20px 25px; }
       .related__posts li .related__content h5 {
