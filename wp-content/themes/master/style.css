@@ -5,8 +5,7 @@
 /* ----- SETTINGS ----- */
 /* -- styles -- */
 /* -- TYPOGRAPHY -- */
-@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700");
-@import url("https://use.typekit.net/etu1qor.css");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans:400,700");
 /* ----- TOOLS ----- */
 /* ----- GENERIC ----- */
 /* -- NORMALIZE -- */
@@ -3417,7 +3416,7 @@ template {
   .nav__overlay ul {
     list-style: none;
     width: 300px;
-    font-family: "europa", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 400;
     position: absolute;
     top: 44%;
@@ -5637,7 +5636,7 @@ input[type="submit"] {
   border-radius: 2px !important;
   border: 2px solid #4B4741 !important;
   text-decoration: none !important;
-  font-family: "europa", sans-serif !important;
+  font-family: "Noto Sans", sans-serif !important;
   color: #FFFFFF !important;
   background-color: #4B4741 !important;
   cursor: pointer !important;
@@ -5798,39 +5797,39 @@ h2.-dark, h4.-dark, h6.-dark {
 h1 {
   padding: 20px 0px;
   margin: 0px;
-  font-family: "Glegoo", serif;
+  font-family: "Inconsolata", monospace;
   font-size: 3.4em;
   line-height: 1.4em; }
 
 h2 {
   padding: 15px 0px;
   margin: 0px;
-  font-family: "Glegoo", serif;
+  font-family: "Inconsolata", monospace;
   font-size: 2.6em;
   line-height: 1.3em; }
 
 h3 {
   padding: 10px 0px;
   margin: 0px;
-  font-family: "Glegoo", serif;
+  font-family: "Inconsolata", monospace;
   font-size: 2.2em;
   line-height: 1.35em; }
 
 h4 {
   padding: 10px 0px;
   margin: 0px;
-  font-family: "Glegoo", serif;
+  font-family: "Inconsolata", monospace;
   font-size: 1.8em;
   line-height: 1.3em; }
 
 h5 {
   padding: 10px 0px;
   margin: 0px;
-  font-family: "Glegoo", serif;
+  font-family: "Inconsolata", monospace;
   font-size: 1.4em; }
 
 h6 {
-  font-family: "europa", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 700;
@@ -5840,7 +5839,7 @@ h6 {
 p {
   padding: 10px 0px;
   margin: 0px;
-  font-family: "europa", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.2em;
   line-height: 1.6em;
   font-weight: 400; }
@@ -5851,7 +5850,7 @@ p {
       opacity: 0.7; }
 
 a {
-  font-family: "europa", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
@@ -5862,7 +5861,7 @@ a {
 
 li {
   margin: 0px;
-  font-family: "europa", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.2em;
   line-height: 1.6em;
   font-weight: 400; }
@@ -5870,7 +5869,7 @@ li {
 span {
   padding: 0px;
   margin: 0px;
-  font-family: "europa", sans-serif; }
+  font-family: "Noto Sans", sans-serif; }
 
 /* ----------------------------------------------------- */
 @media all and (max-width: 64em) {
@@ -5969,7 +5968,7 @@ article {
   article .text.-single li {
     padding: 5px 0px;
     margin: 0px;
-    font-family: "europa", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 1.2em;
     line-height: 1.6em;
     font-weight: 400;
@@ -6027,7 +6026,7 @@ aside a {
 .pagination li.disabled {
   color: #FFFFFF;
   text-decoration: none;
-  font-family: "europa", sans-serif; }
+  font-family: "Noto Sans", sans-serif; }
 
 .pagination li {
   display: inline-block;
@@ -6052,7 +6051,7 @@ aside a {
   opacity: 0.7; }
 
 .tags {
-  font-family: "europa", sans-serif; }
+  font-family: "Noto Sans", sans-serif; }
   .tags a {
     color: #9B9894;
     padding: 4px 10px;
@@ -6258,13 +6257,13 @@ form.wpcf7-form {
     text-align: center;
     border: none;
     color: #F9655D;
-    font-family: "europa", sans-serif; }
+    font-family: "Noto Sans", sans-serif; }
   form.wpcf7-form .wpcf7-form-control-wrap {
     position: static !important; }
   form.wpcf7-form span.wpcf7-not-valid-tip {
     transition: all 0.2s ease;
     position: absolute !important;
-    font-family: "europa", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     right: 12px !important;
     top: 12px !important;
     line-height: 12px;
@@ -6367,11 +6366,11 @@ ul.clients__logos {
   padding: 10px 0px; }
   .work__scope li {
     padding: 8px 0px;
-    font-family: "europa", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     color: #4B4741; }
 
 .work__content {
-  font-family: "europa", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #4B4741; }
   .work__content ul {
     list-style-type: disc;
@@ -6427,7 +6426,7 @@ ul.clients__logos {
 /* ---------- FORM STYLES ----------*/
 form label {
   color: #9B9894 !important;
-  font-family: "europa", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: .8em;
   text-transform: capitalize;
   display: block;
@@ -6438,7 +6437,7 @@ form input[type="email"],
 form input[type="number"],
 form input[type="tel"],
 form textarea {
-  font-family: "europa", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   background: none !important;
   border: none !important;
   font-size: 1.3em !important;
@@ -6555,7 +6554,7 @@ form .customSelectInner {
   line-height: 1.7em;
   text-align: left;
   display: block;
-  font-family: "europa", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   height: 100%;
   width: 100% !important;
   margin-top: 0px; }
@@ -6972,7 +6971,7 @@ form ul li {
   .project-navigation .project-nav a {
     display: block;
     color: #1c5eb5;
-    font-family: "europa", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     margin: 15px 0px;
     padding: 20px 0px;
     transition: all 0.2s ease; }
@@ -7125,6 +7124,9 @@ form ul li {
   border: 10px solid #9B9894;
   overflow: hidden; }
 
+.services__icons__subtitle {
+  text-align: center; }
+
 .services__tiles .services__tile-detail {
   padding: 10px;
   margin: 15px 0px;
@@ -7251,7 +7253,7 @@ form ul li {
     display: inline-block;
     padding-right: 20px; }
     .team__social > li a {
-      font-family: "europa", sans-serif;
+      font-family: "Noto Sans", sans-serif;
       color: #1c5eb5;
       transition: opacity 250ms ease-in-out; }
       .team__social > li a:hover {
@@ -7395,7 +7397,7 @@ form ul li {
 /* ----------------------------------------------------- */
 /* -- FOOTER -- */
 .footer {
-  font-family: "europa", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: .9em;
   width: 100%;
   color: #FFFFFF;
@@ -7542,7 +7544,7 @@ nav.header__nav {
         font-size: 1.3em;
         color: #FFFFFF;
         font-weight: 400;
-        font-family: "europa", sans-serif;
+        font-family: "Noto Sans", sans-serif;
         border-top: 4px solid transparent;
         transition: all 0.2s ease; }
         nav.header__nav ul li a:hover {

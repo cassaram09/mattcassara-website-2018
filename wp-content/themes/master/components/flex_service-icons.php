@@ -5,6 +5,7 @@
     <div class='row'>
       <div class="col-12">
         <h3>Core competencies</h3>
+        <p class=' services__icons__subtitle'>Including, but not limited to...</p>
       </div>
     </div>
 
