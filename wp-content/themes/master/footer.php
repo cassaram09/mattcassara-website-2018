@@ -12,9 +12,9 @@
 
       <div class='col-4'>
           <!-- Sitemap -->
-          <ul class="footer__sitemap">
+          <!-- <ul class="footer__sitemap">
             <?php wp_nav_menu( array( 'menu' => 'footer site map', 'sort_column' => 'menu_order', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
-          </ul>
+          </ul> -->
       </div>
 
       <div class='col-2'>

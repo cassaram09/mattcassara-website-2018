@@ -2,6 +2,18 @@
 
 $(document).ready(function() {
 
+  // mobile nav
+  $('#toggle').click(function() {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
+  });
+
+  $('.nav-item').click(function() {
+    $('.button_container').toggleClass('active');
+    $('#overlay').toggleClass('open');
+  })
+
+
   $('.cycle-testimonials').cycle();
 
 // Animate.css effects

@@ -47,7 +47,17 @@
           </ul>
         </nav>
 
-        <div class="navicon mobileToggle"></div>
+        <div class="button_container" id="toggle">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+
+        <div class="overlay" id="overlay">
+          <div id="overlay-menu">
+            <?php wp_nav_menu( array( 'menu' => 'navigation', 'sort_column' => 'menu_order', 'container' => '', 'nav_item' => '%3$s' ) ); ?>
+          </div>
+        </div>
 
         <div class='clear'></div>
 
