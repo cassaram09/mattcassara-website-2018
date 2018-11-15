@@ -375,11 +375,12 @@ $header-mobile__large: 50px;
 $header-mobile__small: 40px;
 
 header {
+  height: 60px;
   padding: 0px 15px;
 
   .button_container{
     display: block;
-    top: 11px;
+    top: 16px;
   }
 
   .header__inner {
@@ -389,7 +390,7 @@ header {
   .header__logo__link {
     display: block;
     float: left;
-    margin-top: 14px;
+    margin-top: 20px;
     @include animate(.2s);
     &:hover {
       opacity: .7;
@@ -410,11 +411,11 @@ header {
 }
 
 header.smaller {
-  height: 45px;
+  height: 50px;
 
   .button_container{
     display: block;
-    top: 9px;
+    top: 11px;
   }
 
   .header__inner {
@@ -424,6 +425,7 @@ header.smaller {
     margin-top: 7px;
     .header__logo__text {
       font-size: 1.3em;
+      margin-top: 2px;
     }
     .header__logo__image{
       width: 150px !important;

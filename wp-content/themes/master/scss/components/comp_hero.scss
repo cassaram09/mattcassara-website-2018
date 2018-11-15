@@ -36,6 +36,8 @@ $vh-content: 50vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-position: center center !important;
+    background-size: cover !important;
   }
   &.-home {
     height: $vh-home;
@@ -139,7 +141,11 @@ $vh-content: 50vh;
 .hero__slideshow {
   &.-home {
     height: $vh-home;
-    li { height: $vh-home; }
+    li { 
+      height: $vh-home; 
+      background-position: 39% center !important;
+      background-size: cover !important;
+    }
   }
   &.-work {
     height: $vh-work;
@@ -213,6 +219,8 @@ $vh-content: 50vh;
   &.-home {
     li { 
       min-height: 650px;
+      background-position: 43% center !important;
+      background-size: cover !important;
     }
   }
   &.-work {

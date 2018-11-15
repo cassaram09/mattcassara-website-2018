@@ -36,7 +36,7 @@
                   </div>
                   <div class="related__content">
                     <h5><?php the_title(); ?></h5>
-                    <p class="blog__readmore button">Read More</p>
+                    <h6>Read More</h6>
                   </div>
                 </a>
               </li>

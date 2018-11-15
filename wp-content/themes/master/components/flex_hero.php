@@ -27,7 +27,7 @@
     <?php $image = get_sub_field('hero_image'); ?>
 
     <ul class='hero__slideshow -home cycle-slideshow' data-cycle-fx='fade' data-cycle-speed='8000' data-cycle-timeout='50' data-cycle-slides='> li'>
-      <li style="background-image:url(<?php echo $image['url']; ?>);"></li>
+      <li style="background:url(<?php echo $image['url']; ?>);"></li>
     </ul>
 
   </section>

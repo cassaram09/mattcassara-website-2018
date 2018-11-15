@@ -23,7 +23,7 @@
         <h4><?php the_sub_field('service_title') ?></h4>
         <p class='-dark'><?php the_sub_field('service_details') ?></p>
         <?php if ( get_sub_field('service_link_url') ): ?>
-          <p><a href='<?php the_sub_field('service_link_url') ?>'><?php the_sub_field('service_link_text') ?></a></p>
+          <p><a class='button -large button__service' href='<?php the_sub_field('service_link_url') ?>'><?php the_sub_field('service_link_text') ?></a></p>
         <?php endif; ?>
       </div>
 
