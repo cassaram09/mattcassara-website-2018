@@ -444,3 +444,12 @@ header.smaller {
 /* ----------------------------------------------------- */  
 }
 /* ----------------------------------------------------- */
+
+@media all and (orientation: landscape){
+  #overlay-menu > ul > li {
+    display: inline-block;
+    margin: 15px;
+    font-size: 20px;
+  }
+}
+

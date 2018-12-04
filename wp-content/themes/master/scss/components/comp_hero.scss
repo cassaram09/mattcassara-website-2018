@@ -327,3 +327,21 @@ $vh-content: 50vh;
     transform: scaleX(0);
   }
 }
+
+@media handheld and (orientation: landscape){
+  .hero.-home {
+    height: 650px;
+  }
+
+  .hero__slideshow.-home li {
+    height: 650px;
+  }
+
+  .hero.-content {
+    height: 300px;
+  }
+
+  .hero__slideshow.-content li {
+    height: 300px;
+  }
+}

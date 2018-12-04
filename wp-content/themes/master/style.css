@@ -6856,6 +6856,16 @@ form ul li {
     -webkit-transform: scaleX(0);
             transform: scaleX(0); } }
 
+@media handheld and (orientation: landscape) {
+  .hero.-home {
+    height: 650px; }
+  .hero__slideshow.-home li {
+    height: 650px; }
+  .hero.-content {
+    height: 300px; }
+  .hero__slideshow.-content li {
+    height: 300px; } }
+
 .location {
   padding: 50px; }
 
@@ -7827,6 +7837,12 @@ header.smaller {
   /* ----------------------------------------------------- */ }
 
 /* ----------------------------------------------------- */
+@media all and (orientation: landscape) {
+  #overlay-menu > ul > li {
+    display: inline-block;
+    margin: 15px;
+    font-size: 20px; } }
+
 /* endinject */
 /* ----- UTILITIES ----- */
 .--no-margin {
